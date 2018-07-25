@@ -388,6 +388,8 @@ ul {
 
 .on-site-sub-column img {
     max-width: 25%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .on-site-sub-column p {
@@ -397,9 +399,54 @@ ul {
 
 .on-site-sub-column:hover {
     -webkit-box-shadow: inset 0px 0px 30px -2px rgba(0,0,0,0.55);
--moz-box-shadow: inset 0px 0px 30px -2px rgba(0,0,0,0.55);
-box-shadow: inset 0px 0px 30px -2px rgba(0,0,0,0.55);
+    -moz-box-shadow: inset 0px 0px 30px -2px rgba(0,0,0,0.55);
+    box-shadow: inset 0px 0px 30px -2px rgba(0,0,0,0.55);
     transform: scale(.97);
+}
+
+.web-dev-section {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: white;
+}
+
+.web-dev-section-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.web-columns {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.web-sub-column {
+    width: 50;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: .2s;
+}
+
+.web-sub-column img {
+    max-width: 25%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.web-sub-column p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.managed-section {
+    background-color: #E74C3C;
+    color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .service-section {
