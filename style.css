@@ -457,6 +457,18 @@ ul {
 
 .workstation-section {
     background-color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.workstation-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.workstation-item {
+    width: 50%;
 }
 
 .contact-section {
