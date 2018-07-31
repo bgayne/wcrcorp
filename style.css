@@ -398,12 +398,6 @@ ul {
     padding-right: 10px;
 }
 
-.on-site-sub-column:hover {
-    -webkit-box-shadow: inset 0px 0px 30px -2px rgba(0,0,0,0.55);
-    -moz-box-shadow: inset 0px 0px 30px -2px rgba(0,0,0,0.55);
-    box-shadow: inset 0px 0px 30px -2px rgba(0,0,0,0.55);
-    transform: scale(.97);
-}
 
 .web-dev-section {
     padding-top: 5%;
@@ -423,7 +417,7 @@ ul {
 }
 
 .web-sub-column {
-    width: 50;
+    max-width: 50%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -471,6 +465,11 @@ ul {
     width: 50%;
 }
 
+.workstation-item-icon {
+    color: #E74C3C;
+    padding-right: 10px;
+}
+
 .contact-section {
     min-height: 30vh;
     display: flex;
@@ -481,6 +480,90 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+@media all and (orientation:portrait) {
+    .contact-section-column {
+        flex-direction: column;
+    }
+}
+
+.business-section {
+
+}
+
+.contact-section {
+    background-color: #E74C3C;
+    color: white;
+}
+
+.contact-section-column ul {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-map-list-header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+.site-map-list-item {
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.site-map-list-item a {
+    color: inherit;
+}
+
+#more-info-button:hover {
+    cursor: pointer;
+}
+
+#more-info-button div {
+    width: 100%;
+    font-size: 1.5rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+    color: #E74C3C;
+    text-align: center;
+}
+
+#more-info-button div p {
+    padding: 0; margin: 0;
+}
+
+.footer-social-icon-link {
+    font-size: 3rem;
+    padding-right: 1rem;
+}
+
+#facebook-icon:hover {
+    color: #3b5998;
+}
+
+#yelp-icon:hover {
+    color: #c91400;
+}
+
+#google-icon:hover {
+    color: #4885ed
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: #E74C3C;
+    font-size: .75rem;
+    color: white;
+    justify-content: center;
+}
+
+.more-information-list {
+    margin-left: 0; padding-left: 0;
 }
 
 
