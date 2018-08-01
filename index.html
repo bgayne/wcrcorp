@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Winchester Business Services</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
         <link rel="stylesheet" href="style.css">
+        <script src='https://www.google.com/recaptcha/api.js'></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -78,6 +79,24 @@
                 </li>
             </ul>
         </div>
+        <div class="contact-modal-desktop">
+            <div class="contact-modal-desktop-form">
+                <i class="contact-modal-desktop-exit fas fa-times-thin fa-2x"></i>
+                <h2>Contact Us</h2>
+                <form action="/contact" method="post" id="contact-form">
+                    <div class="form-field-container"><span class="form-field form-item"><p><b>Name: </b></p><input type="text" name="name" id="name" placeholder="Name"></span></div>
+                    <div class="form-field-container"><span class="form-field form-item"><p><b>Email: </b></p><input type="text" name="email" id="email" placeholder="Email"></span></div>
+                        <div class="form-field-container"><span class="form-field form-item"><p><b>Query: </b></p><textarea id="query" name="query" placeholder="Query"></textarea></span></div>
+                    <div id="captcha" class="g-recaptcha" data-sitekey="6LeYF2YUAAAAALgMEl5leWLWHHJ1C2zMBVrLaBpH"></div>
+                </form>
+                    <button form="contact-form" id="submission-button" class="form-item">
+                            <p>Submit</p>
+                    </button>
+                </div>
+
+                </form>
+            </div>
+        </div>
         <div class="cover-video-container">
             <video autoplay loop poster="resources/Office-Day.jpg" id="cover-video">
                 <source src="resources/Office-Day.webm" type="video/webm">
@@ -107,12 +126,12 @@
             <div class="pure-u-lg-1-4">
             
             </div>
-            <div class="main-section-column pure-u-1 pure-u-lg-1-4">
+            <div class="main-section-column pure-u-1 pure-u-lg-1-4 section-column">
                 <h1>
                     Your local business solution. 
                 </h1>
                 <p>
-                    Winchester Computers is locally owned and operated. With decades of combined computer service experience, our technicians are capable of solving all technical problems  home users or small- to medium-sized business may encounter. Winchester has built its reputation on customer trust and reliable service.
+                    Winchester Computers is locally owned and operated. With decades of combined computer service experience, our technicians are capable of solving all technical problems home users and businesses may encounter. Winchester has built its reputation on customer trust and reliable service.
                 </p>
             </div>
             <div class="pure-u-1 pure-u-lg-1-4">
@@ -126,25 +145,25 @@
             <div class="pure-u-lg-1-4">
 
             </div>
-            <div class="pure-u-lg-1-2 on-site-section-column">
+            <div class="pure-u-1 pure-u-lg-1-2 on-site-section-column section-column">
                 <h1>On-Site Service</h1>
-                <p>Winchester is here for your business. Our support staff can manage the computing needs of small and mid-sized businesses. Since 1989, we’ve been one of Daytona’s premier business support resources. See why Winchester has been Daytona's trusted business support solution for over 29 years.</p>
-                <div class="on-site-sub-columns">
-                    <div class="on-site-sub-column">
+                <p>Winchester is here for your business. Our support staff can manage the computing needs of local businesses. Since 1989, we’ve been one of Daytona’s premier business support resources. See why Winchester has been Daytona's trusted business support solution for over 29 years.</p>
+                <div class="on-site-sub-columns sub-columns">
+                    <div class="on-site-sub-column sub-column">
                         <h3>Network Administration</h3>
                         <img src="resources/network.svg">
                         <p>Our technicians are fully trained to support a modern computer network. We’re capable of setting up basic small office systems as well as full-featured business networks. Call or stop by to schedule a consultation with our network technicians, who can create a plan to address your unique networking needs.</p>
                     </div>
-                    <div class="on-site-sub-column">
+                    <div class="on-site-sub-column sub-column">
                         <h3>Server Administration</h3>
                         <img src="resources/database.svg">
                         <p>
-                            Let our technicians manage your business’ server infrastructure. Trained on Windows and Linux administration, our technicians can deploy and administer most server configurations appropriate for small- and medium-sized businesses.</p>
+                            Let our technicians manage your business’ server infrastructure. Trained on Windows and Linux administration, our technicians can deploy and administer most server configurations appropriate for all types of businesses.</p>
                     </div>
-                    <div class="on-site-sub-column">
+                    <div class="on-site-sub-column sub-column">
                         <h3>Workstation Support</h3>
                         <img src="resources/tools.svg">
-                         <p>Broken hardware? Failed update? We’re here. Winchester has the resources to service your organization’s individual workstations. Need a new PC integrated on your network? Time for an upgrade? We can do it all.</p>
+                         <p>Broken hardware? Failed update? We’re here. Winchester has the resources to service your organization’s individual workstations. Need a new PC integrated on your network? Time for an upgrade? We can do it all. Got Macs? We have over 19 years of Mac support experience.</p>
                     </div>
                 </div>
             </div>
@@ -156,16 +175,16 @@
             <div class="pure-u-lg-1-4">
 
             </div>
-            <div class="pure-u-lg-1-2 web-dev-section-column">
+            <div class="pure-u-1 pure-u-lg-1-2 web-dev-section-column section-column">
                 <h1>Web Services</h1>
                 <p>An online presence is an essential part of modern business. Winchester’s technical staff is able to get you online with a modern personalized website of your own. We take care of it all: design, development, hosting, and management. Sit back and let us develop your online identity.</p>
-                <div class="web-columns">
-                    <div class="web-sub-column">
+                <div class="web-columns sub-columns">
+                    <div class="web-sub-column sub-column">
                         <h3>Cloud Administration</h3>
                         <img src="resources/cloud.svg">
-                        <p>It’s not just a buzzword. Cloud hosting offers a level of manageability, versatility, and availability that traditional bare-metal servers do not. Your cloud server grows with your business. With cloud technology, we can adapt to your changing business needs.</p>
+                        <p>It’s not just a buzzword. Cloud hosting offers a level of manageability, versatility, and availability that traditional servers do not. Your cloud server grows with your business. With cloud technology, we can adapt to your changing business needs.</p>
                     </div>
-                    <div class="web-sub-column">
+                    <div class="web-sub-column sub-column">
                         <h3>Web Development &amp; Design</h3>
                         <img src="resources/template.svg">
                         <p>Develop your online identity with a personalized website that uniquely represents your business. Move away from pre-made templates. Let us hand-craft the site that communicates your business to the world. All sites are designed to be mobile-ready. Whether it’s a static landing page or a dynamic web app, we’re here for you.</p>
@@ -181,7 +200,7 @@
             <div class="pure-u-lg-1-4">
 
             </div>
-            <div class="pure-u-lg-1-2 managed-section-column">
+            <div class="pure-u-1 pure-u-lg-1-2 managed-section-column section-column">
                 <h1>Managed Services</h1>
                 <p>Move your business infrastructure online. At Winchester, our support staff is capable of creating a modern cloud-based business solution that is tailored to your needs. Let us manage the challenge of updating and maintaining your business’s digital IT needs. </p>
                 <div class="managed-logos">
@@ -190,8 +209,8 @@
                     <i class="fab fa-windows managed-logo"></i>
                     <i class="fab fa-google managed-logo"></i>
                 </div>
-                <div class="managed-section-sub-columns">
-                    <div class="managed-section-sub-column">
+                <div class="managed-section-sub-columns sub-columns">
+                    <div class="managed-section-sub-column sub-column">
                         <div class="managed-section-point">
                             <h3 class="managed-section-point-title">Cloud Hosting</h3>
                             <p class="managed-section-point-blurb">Cloud hosting offers unmatched scalability and availability compared to traditional hosting solutions. As your business grows, we can deploy and manage a cloud solution that grows with your business needs.</p>
@@ -215,7 +234,7 @@
             <div class="pure-u-lg-1-4">
 
             </div>
-            <div class="pure-u-lg-1-2 workstation-section-column">
+            <div class="pure-u-1 pure-u-lg-1-2 workstation-section-column section-column">
                 <h1>Workstation Management</h1>
                 <p>Your workstations are the heart of your business’s IT infrastructure. They connect you and your users to the vital resources that keeps your organization running. Here at Winchester, we provide a full-service workstation solution, ranging from custom-built machines to full hardware and software support.</p>
                 <div class="workstation-items">
@@ -229,7 +248,7 @@
                     </div>
                     <div class="workstation-item">
                         <h3><i class="fas fa-file-invoice-dollar workstation-item-icon"></i>Flexible Plans</h3>
-                        <p>We work with you to find an affordable solution to your workstation needs. We offer bulk pricing and long-term replacement plans to help fit your budget. With our fully customized workstation solutions, we make sure you’re paying for only what you need, not what we can sell you.</p>
+                        <p>We work with you to find an affordable solution to your workstation needs. We offer bulk pricing and long-term replacement plans to help fit your budget. With our fully customized workstation solutions, we make sure you’re paying for only what you need.</p>
                     </div>
                     <div class="workstation-item">
                         <h3> <i class="fas fa-user-cog workstation-item-icon"></i>Certified Experts</h3>
@@ -245,7 +264,7 @@
             <div class="pure-u-md-6-24 pure-u-lg-6-24">
 
             </div>    
-            <div class="contact-section-column pure-u-1 pure-u-md-12-24 pure-u-lg-12-24">
+            <div class="contact-section-column pure-u-1 pure-u-md-12-24 pure-u-lg-12-24 section-column">
                 <ul class="site-map-list" style="margin-left: 0; padding-left: 0;">
                     <li class="site-map-list-header">
                         Services
